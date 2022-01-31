@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks(lesson12)</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <pre>Task 1. Есть список задач. При клике на текст задачи перечеркните ее, если она перечеркнута сделайте ее обратно активной.  
+    </pre>
+
+    <ul id="todo-list" class="todo__list">
+        <li>
+            <p>Task 1</p>
+        </li>
+        <li>
+            <p>Task 2</p>
+        </li>
+        <li>
+            <p>Task 3</p>
+        </li>
+        <li>
+            <p>Task 4</p>
+        </li>
+        <li>
+            <p>Task 5</p>
+        </li>
+        <li>
+            <p>Task 6</p>
+        </li>
+        <li>
+            <p>Task 7</p>
+        </li>
+        <li>
+            <p>Task 8</p>
+        </li>
+        <li>
+            <p>Task 9</p>
+        </li>
+        <li>
+            <p>Task 10</p>
+        </li>
+    </ul>
+
+
+    <pre>Task 2. У вас дан список вопросов(в виде аккордеона). Ответы скрыты под ними. При клике на любой из вопросов снизу раскройте ответ. Используйте класс под названием "answer-item-show" чтобы ответ на вопрос можно было отобразить.</pre>
+
+    <ul class="collection">
+        <li class="collection-item">Question 1</li>
+        <li class="collection-item answer-item answer-item-show">Answer 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+        <li class="collection-item">Question 2</li>
+        <li class="collection-item answer-item">Answer 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+        <li class="collection-item">Question 3</li>
+        <li class="collection-item answer-item">Answer 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+        <li class="collection-item">Question 4</li>
+        <li class="collection-item answer-item">Answer 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+        <li class="collection-item">Question 5</li>
+        <li class="collection-item answer-item">Answer 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+        <li class="collection-item">Question 6</li>
+        <li class="collection-item answer-item">Answer 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus.</li>
+      </ul>
+
+
+    
+
+    <pre>Task 3. При клике на кнопку "open info" откройте модальное окно. Чтобы его открыть добавьте к элементу "div id="modal1""  класс под названием "modal_open". Когда модальное окно будет открыто, вам необходимо при нажатии на любое место страницы скрыть модальное окно, но только не при нажатии на само окно.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+
+              <a class="waves-effect waves-light btn" id="open-modal" >open info</a>
+
+        </div>
+    </div>
+
+
+    
+
+    <pre>Task 4. Галерея. При нажатии на картинку ниже(миниатюру), открыть ее основное изображение. (Делегирование)</pre>
+
+
+    <div class="container">
+        <div class="photo">
+            <img src="images/photo1.jpeg" alt="example">
+        </div>
+        <div class="image active-image"><img src="images/photo1.jpeg" alt="example"></div>
+        <div class="image"><img src="images/photo2.jpeg" alt="example"></div>
+        <div class="image"><img src="images/photo3.jpeg" alt="example"></div>
+        <div class="image"><img src="images/photo4.jpeg" alt="example"></div>
+        <div class="image"><img src="images/photo5.jpeg" alt="example"></div>
+    </div>
+
+
+   
+
+
+    <pre>Task 5. Есть список задач для пользователей. Отсортируйте этот список по алфавиту(за сортировку берем имя пользователя).  
+    </pre>
+
+    <button id="sort">Сортировать по алфавиту</button>
+
+    <ul id="todo" class="todo__list">
+        <li>
+            <span class="name">Joe</span>
+            <p>To-do 1</p>
+        </li>
+        <li>
+            <span class="name">John</span>
+            <p>To-do 2</p>
+        </li>
+        <li>
+            <span class="name">Jordan</span>
+            <p>To-do 3</p>
+        </li>
+        <li>
+            <span class="name">Jaden</span>
+            <p>To-do 4</p>
+        </li>
+        <li>
+            <span class="name">Juan</span>
+            <p>To-do 5</p>
+        </li>
+        <li>
+            <span class="name">Jack</span>
+            <p>To-do 6</p>
+        </li>
+        <li>
+            <span class="name">Jose</span>
+            <p>To-do 7</p>
+        </li>
+        <li>
+            <span class="name">Jacky</span>
+            <p>To-do 8</p>
+        </li>
+        <li>
+            <span class="name">Jaden</span>
+            <p>To-do 9</p>
+        </li>
+        <li>
+            <span class="name">Jesse</span>
+            <p>To-do 10</p>
+        </li>
+    </ul>
+    
+
+    
+
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
